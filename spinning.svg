@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg version="1.1" viewBox="0 0 512 512"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="filter" color-interpolation-filters="sRGB"
+            x="0" y="0" width="512" height="512">
+      <feImage width="512" height="512" xlink:href="spinning.png" result="displacement" />
+      <feDisplacementMap width="512" height="512" in="SourceGraphic" in2="displacement"
+                         scale="512" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+  <image xlink:href="tiles.jpg" width="512" height="512" filter="url(#filter)" />
+</svg>
